@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatterMan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="subBar">
+        <div class="subHeader">
+          <img
+            src="./images/chat-icon.svg"
+            alt="chat-icon-app"
+            srcset=""
+            width="80px"
+            height="80px"
+            class="chatIcon"
+          />
+          <p class="title">Chatter Man</p>
+        </div>
+      </div>
+      <div class="userList">
+        <p class="rad">Users</p>
+        <p>Bhavya Panchal</p>
+      </div>
+    </div>
+    <div class="chatBox">
+      <div class="chatSection">
+        <div class="chatLimiterBg">
+          <div class="msgDetail">
+            <p id="userName">Bhavya Panchal</p>
+            &nbsp;|&nbsp;
+            <p id="timeOfMsg">10:30PM</p>
+          </div>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+        </div>
+      </div>
+      <div class="formDiv">
+        <form id="formFields" class="formDiv">
+          <input type="text" placeholder="Type A Message..." class="inpMsg" />
+          <button type="submit" class="sendBtn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

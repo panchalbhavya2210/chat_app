@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap");
+
+body {
+  font-family: Plus Jakarta Sans;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 350px;
+  height: 100vh;
+  background: #f1f1f1;
+  box-shadow: 0 0 5px #939393;
+}
+.subHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #000;
+  background: linear-gradient(45deg, rgb(234, 234, 234), rgb(206, 176, 255));
+}
+.chatIcon {
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px 0 20px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.userList {
+  padding: 10px;
+}
+.rad {
+  color: #2b2b2b;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.chatBox {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #fff, #fff, rgb(212, 246, 255));
+}
+.chatSection {
+  width: 100%;
+  height: 86vh;
+  overflow-y: scroll;
+}
+.chatLimiterBg {
+  background-color: #ffffffb5;
+  box-shadow: 0 0 5px #b3b3b3;
+  width: 95%;
+  margin: 10px auto;
+  padding: 15px 10px 10px 10px;
+  border-radius: 5px;
+  position: relative;
+  backdrop-filter: 10px;
+}
+.msgDetail {
+  display: flex;
+  margin: 0 0 10px 0;
+  font-weight: bolder;
+}
+
+.formDiv {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inpMsg {
+  width: 90%;
+  height: 40px;
+  background-color: rgb(174, 238, 255);
+  margin: 0 10px 0 0;
+  padding: 10px;
+  border: 1px solid #acacac;
+  border-radius: 100px;
+  outline: none;
+  font-family: Plus Jakarta Sans;
+  font-weight: bold;
+}
+.sendBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  outline: none;
+  border: 1px solid #acacac;
+
+  background-color: rgb(174, 255, 255);
+  cursor: pointer;
+}
