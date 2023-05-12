@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socket(server);
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use("/.netlify/functions/api"(path.join(__dirname, "public")));
 const nameOfBot = "Chat-Bit-Bot";
 
 io.on("connection", (socket) => {
