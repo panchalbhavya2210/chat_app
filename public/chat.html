@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatterMan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="subBar">
+        <div class="subHeader">
+          <img
+            src="./images/chat-icon.svg"
+            alt="chat-icon-app"
+            srcset=""
+            width="80px"
+            height="80px"
+            class="chatIcon"
+          />
+          <p class="title">Chatter Man</p>
+        </div>
+      </div>
+      <div class="userList">
+        <p class="rad">Users</p>
+        <p>Bhavya Panchal</p>
+      </div>
+    </div>
+    <div class="chatBox">
+      <div class="chatSection"></div>
+      <div class="formDiv">
+        <form id="formOfMsg" class="formDiv">
+          <input
+            type="text"
+            placeholder="Type A Message..."
+            class="inpMsg"
+            id="messageField"
+          />
+          <button type="submit" class="sendBtn">Send</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.1/qs.min.js"
+      integrity="sha512-5Zv/hNtOKSkeScnIYOqGjng82gQSHsCoyqq9TgrJLgYa032cUYWH4kF1ayS8Gz1Jfge7e8MaBF6AeEvoQ92v8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
